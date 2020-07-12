@@ -43,7 +43,6 @@ export default {
             }
             this.$message.success('获取权限列表成功')
             this.rightsList = res.data
-            console.log(this.rightsList)
         }
     }
 }

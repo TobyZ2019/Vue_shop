@@ -110,7 +110,7 @@ export default {
             }
             const { data: res } = await this.$http.delete('roles/' + role.id + '/rights/' + rightId)
             if (res.meta.status !== 200) {
-                return this.$$message.error('删除失败')
+                return this.$message.error('删除失败')
             }
             role.children = res.data
             this.$message.success('删除成功')

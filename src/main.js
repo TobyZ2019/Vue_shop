@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import treeTable from 'vue-table-with-tree-grid'
 import App from './App.vue'
 import router from './router/index'
 import './plugins/element.js'
@@ -14,6 +15,7 @@ axios.interceptors.request.use(config => {
 Vue.prototype.$http = axios
 
 Vue.config.productionTip = false
+Vue.component('tree-table', treeTable)
 
 new Vue({
     router,
