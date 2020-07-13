@@ -274,7 +274,6 @@ export default {
                 }
                 this.editDialogVisible = false
                 this.$message.success('修改用户成功')
-                console.log(res)
                 this.getUserList()
             })
         },
