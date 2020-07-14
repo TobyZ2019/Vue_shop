@@ -40,7 +40,7 @@
                             </el-switch>
                         </template>
                     </el-table-column>
-                    <el-table-column label="操作">
+                    <el-table-column label="操作" width="200px">
                         <template slot-scope="scope">
                             <el-button type="primary" icon="el-icon-edit" size="mini" @click="editUserDialog(scope.row.id)"></el-button>
                             <el-button type="danger" icon="el-icon-delete" size="mini" @click="removeUserById(scope.row.id)"></el-button>
@@ -48,7 +48,6 @@
                                 <el-button type="warning" icon="el-icon-setting" size="mini"
                                 @click="setRole(scope.row)"></el-button>
                             </el-tooltip>
-                            {{scope.row.id}}
                         </template>
                     </el-table-column>
                 </el-table>

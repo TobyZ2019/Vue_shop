@@ -87,18 +87,6 @@
                     </el-table>
                 </el-tab-pane>
             </el-tabs>
-        <!-- 分页区域 -->
-            <!-- <el-pagination
-                @size-change="handleSizeChange"
-                @current-change="handleCurrentChange"
-                :current-page="queryCateParams.pagenum"
-                :page-sizes="[5, 10, 20, 100]"
-                :page-size="queryCateParams.pagesize"
-                layout="total, sizes, prev, pager, next, jumper"
-                :total="total">
-            </el-pagination> -->
-        <!-- dialog弹出框区域 -->
-            <!-- 添加弹出框 -->
             <el-dialog
             :title="'添加'+titleText"
             :visible.sync="addAttDialogVisible"
