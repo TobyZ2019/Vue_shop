@@ -82,7 +82,7 @@
         :visible.sync="picDialogVisible"
         width="50%"
         :before-close="picDialogClose">
-            <img :src="preView" alt="" class="preViewPic">
+            <img :src="preView" alt="" class="previewPic">
         </el-dialog>
     </div>
 </template>
@@ -225,7 +225,7 @@ export default {
     .el-checkbox {
         margin: 0 5px 0 0 !important;
     }
-    .preViewPic {
+    .previewPic {
         width: 100%;
     }
 </style>
